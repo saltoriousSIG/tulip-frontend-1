@@ -15,6 +15,6 @@ export const useFetchPoolInfo = () => {
     }
     loadPoolInfo()
   }, [chainId])
-  const pInfo = useMemo(() => poolInfo, [poolInfo])
-  return pInfo
+  const info = useMemo(() => poolInfo, [poolInfo])
+  return info
 }

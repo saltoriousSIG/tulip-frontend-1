@@ -31,7 +31,6 @@ export const usePools = () => {
         const tokenList = poolsData.map(d => d.pair)
         loadBalances(tokenList)
       }
-
       loadPool()
     }
   }, [chainId, account])

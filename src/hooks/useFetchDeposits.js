@@ -44,7 +44,7 @@ export const useFetchDeposits = () => {
 
     if (account && contract) {
       contract.on('Transfer', (from, to, value, event) => {
-        if (to.addressesEqual(account) || from.addressesEqual(account)) {
+        if (addressesEqual(to, account) || addressesEqual(from, account)) {
           loadDepositData()
         }
       })
